@@ -1,0 +1,973 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/dinar/ontologies/2018/10/Cardiac_arrhythmias"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/dinar/ontologies/2018/10/Cardiac_arrhythmias">
+    <Prefix name="" IRI="http://www.semanticweb.org/dinar/ontologies/2018/10/Cardiac_arrhythmias"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>The Cardiac arrithhmias ontology describes and classifies different abnormalities of cardiac rhythm with its diagnosis by ECG indicators. 
+The source of knowledge is taken from the AMBOSS overview: https://www.amboss.com/us/knowledge/Overview_of_cardiac_arrhythmias</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#AV_nodal_reentry_tachycardia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AV_node_origin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Atrial_fibrillation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Atrial_flutter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Atrial_origin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Atrial_tachycardia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Atrioventricular_block"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Atrioventricular_reentry_tachycardia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bradyarrhythmias"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cardiac_arrhythmias"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diagnosis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ECG_factors"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Focal_atrial_tachycardia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Junctional_tachycardia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Multifocal_atrial_tachycardia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Narrow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Origin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#P-wave"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Premature_ventricular_beats"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QRS_complex_type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Respiratory_sinus_arrhythmia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rhythm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sinoatrial_pause_or_arrest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sinus_bradycardia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sinus_tachycardia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Supraventricular_arrhythmias"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Supraventricular_premature_beats"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tachyarrhythmias"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tachycardia-bradycardia_syndrome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Torsade_de_pointes_tachycardia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ventricular_arrhythmias"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ventricular_fibrillation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ventricular_tachycardia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wide"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ecg_findings_propeties"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_P_wave_morphology"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_QRS_complex_type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_rate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_rhythm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#localisation_of_origin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Blood_tests"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cheest_X-ray"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#First-degree_block"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Holter_monitor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Megical_history"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Physical_exams"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Second-degree_block"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Third-degree_block"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#absent_P_wave"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#discernable_P_wave"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#indiscernible_P_wave"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inverted_P_wave"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#irregular_rhythm"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#irregulary_irregular_rhythm"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#normal_P_wave"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#regular_rhytm"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Atrial_tachycardia"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#localisation_of_origin"/>
+            <Class IRI="#Atrial_origin"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Atrioventricular_block"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Bradyarrhythmias"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#First-degree_block"/>
+                <NamedIndividual IRI="#Second-degree_block"/>
+                <NamedIndividual IRI="#Third-degree_block"/>
+            </ObjectOneOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#localisation_of_origin"/>
+                <Class IRI="#AV_node_origin"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Bradyarrhythmias"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Cardiac_arrhythmias"/>
+            <ObjectMaxCardinality cardinality="60">
+                <ObjectProperty IRI="#has_rate"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Focal_atrial_tachycardia"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Atrial_tachycardia"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#has_rhythm"/>
+                <NamedIndividual IRI="#regular_rhytm"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Multifocal_atrial_tachycardia"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Atrial_tachycardia"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#has_rhythm"/>
+                <NamedIndividual IRI="#irregulary_irregular_rhythm"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Origin"/>
+        <ObjectUnionOf>
+            <Class IRI="#AV_node_origin"/>
+            <Class IRI="#Atrial_origin"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#P-wave"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#absent_P_wave"/>
+            <NamedIndividual IRI="#discernable_P_wave"/>
+            <NamedIndividual IRI="#indiscernible_P_wave"/>
+            <NamedIndividual IRI="#inverted_P_wave"/>
+            <NamedIndividual IRI="#normal_P_wave"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#QRS_complex_type"/>
+        <ObjectUnionOf>
+            <Class IRI="#Narrow"/>
+            <Class IRI="#Wide"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Rate"/>
+        <DataSomeValuesFrom>
+            <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+            <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Rhythm"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#irregular_rhythm"/>
+            <NamedIndividual IRI="#irregulary_irregular_rhythm"/>
+            <NamedIndividual IRI="#regular_rhytm"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Tachyarrhythmias"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Cardiac_arrhythmias"/>
+            <ObjectMinCardinality cardinality="100">
+                <ObjectProperty IRI="#has_rate"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#AV_nodal_reentry_tachycardia"/>
+        <Class IRI="#Supraventricular_arrhythmias"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AV_nodal_reentry_tachycardia"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="150">
+                <ObjectProperty IRI="#has_rate"/>
+            </ObjectMinCardinality>
+            <ObjectMaxCardinality cardinality="250">
+                <ObjectProperty IRI="#has_rate"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AV_nodal_reentry_tachycardia"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#has_QRS_complex_type"/>
+            <Class IRI="#Narrow"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AV_nodal_reentry_tachycardia"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#localisation_of_origin"/>
+            <Class IRI="#AV_node_origin"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AV_nodal_reentry_tachycardia"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#has_rhythm"/>
+            <NamedIndividual IRI="#regular_rhytm"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AV_node_origin"/>
+        <Class IRI="#Origin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atrial_fibrillation"/>
+        <Class IRI="#Supraventricular_arrhythmias"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atrial_fibrillation"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="350">
+                <ObjectProperty IRI="#has_rate"/>
+            </ObjectMinCardinality>
+            <ObjectMaxCardinality cardinality="450">
+                <ObjectProperty IRI="#has_rate"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atrial_fibrillation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#has_QRS_complex_type"/>
+            <Class IRI="#Narrow"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atrial_fibrillation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#localisation_of_origin"/>
+            <Class IRI="#Atrial_origin"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atrial_fibrillation"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#has_P_wave_morphology"/>
+            <NamedIndividual IRI="#discernable_P_wave"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atrial_fibrillation"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#has_rhythm"/>
+            <NamedIndividual IRI="#irregulary_irregular_rhythm"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atrial_flutter"/>
+        <Class IRI="#Supraventricular_arrhythmias"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atrial_flutter"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="250">
+                <ObjectProperty IRI="#has_rate"/>
+            </ObjectMinCardinality>
+            <ObjectMaxCardinality cardinality="350">
+                <ObjectProperty IRI="#has_rate"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atrial_flutter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#has_QRS_complex_type"/>
+            <Class IRI="#Narrow"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atrial_flutter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#localisation_of_origin"/>
+            <Class IRI="#Atrial_origin"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atrial_flutter"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#has_rhythm"/>
+            <NamedIndividual IRI="#regular_rhytm"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atrial_origin"/>
+        <Class IRI="#Origin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atrial_tachycardia"/>
+        <Class IRI="#Supraventricular_arrhythmias"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atrial_tachycardia"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="150">
+                <ObjectProperty IRI="#has_rate"/>
+            </ObjectMinCardinality>
+            <ObjectMaxCardinality cardinality="250">
+                <ObjectProperty IRI="#has_rate"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atrial_tachycardia"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#has_QRS_complex_type"/>
+            <Class IRI="#Narrow"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atrioventricular_block"/>
+        <Class IRI="#Bradyarrhythmias"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atrioventricular_reentry_tachycardia"/>
+        <Class IRI="#Supraventricular_arrhythmias"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atrioventricular_reentry_tachycardia"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="150">
+                <ObjectProperty IRI="#has_rate"/>
+            </ObjectMinCardinality>
+            <ObjectMaxCardinality cardinality="250">
+                <ObjectProperty IRI="#has_rate"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atrioventricular_reentry_tachycardia"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#localisation_of_origin"/>
+            <Class IRI="#AV_node_origin"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atrioventricular_reentry_tachycardia"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#has_P_wave_morphology"/>
+            <NamedIndividual IRI="#inverted_P_wave"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atrioventricular_reentry_tachycardia"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#has_rhythm"/>
+            <NamedIndividual IRI="#regular_rhytm"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ECG_factors"/>
+        <Class IRI="#Diagnosis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Junctional_tachycardia"/>
+        <Class IRI="#Supraventricular_arrhythmias"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Junctional_tachycardia"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#has_QRS_complex_type"/>
+            <Class IRI="#Narrow"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Junctional_tachycardia"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#localisation_of_origin"/>
+            <Class IRI="#AV_node_origin"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Junctional_tachycardia"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#has_P_wave_morphology"/>
+            <NamedIndividual IRI="#inverted_P_wave"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Junctional_tachycardia"/>
+        <ObjectMaxCardinality cardinality="130">
+            <ObjectProperty IRI="#has_rate"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Narrow"/>
+        <Class IRI="#QRS_complex_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#P-wave"/>
+        <Class IRI="#ECG_factors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Premature_ventricular_beats"/>
+        <Class IRI="#Ventricular_arrhythmias"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Premature_ventricular_beats"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#has_QRS_complex_type"/>
+            <Class IRI="#Wide"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#QRS_complex_type"/>
+        <Class IRI="#ECG_factors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rate"/>
+        <Class IRI="#ECG_factors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Respiratory_sinus_arrhythmia"/>
+        <Class IRI="#Bradyarrhythmias"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Respiratory_sinus_arrhythmia"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#localisation_of_origin"/>
+            <Class IRI="#Atrial_origin"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rhythm"/>
+        <Class IRI="#ECG_factors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sinoatrial_pause_or_arrest"/>
+        <Class IRI="#Bradyarrhythmias"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sinoatrial_pause_or_arrest"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#localisation_of_origin"/>
+            <Class IRI="#Atrial_origin"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sinoatrial_pause_or_arrest"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#has_P_wave_morphology"/>
+            <NamedIndividual IRI="#absent_P_wave"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sinus_bradycardia"/>
+        <Class IRI="#Bradyarrhythmias"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sinus_bradycardia"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#localisation_of_origin"/>
+            <Class IRI="#Atrial_origin"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sinus_bradycardia"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#has_P_wave_morphology"/>
+            <NamedIndividual IRI="#normal_P_wave"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sinus_tachycardia"/>
+        <Class IRI="#Supraventricular_arrhythmias"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sinus_tachycardia"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#has_QRS_complex_type"/>
+            <Class IRI="#Narrow"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sinus_tachycardia"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#localisation_of_origin"/>
+            <Class IRI="#Atrial_origin"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sinus_tachycardia"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#has_P_wave_morphology"/>
+            <NamedIndividual IRI="#normal_P_wave"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sinus_tachycardia"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#has_rhythm"/>
+            <NamedIndividual IRI="#regular_rhytm"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sinus_tachycardia"/>
+        <ObjectMaxCardinality cardinality="180">
+            <ObjectProperty IRI="#has_rate"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Supraventricular_arrhythmias"/>
+        <Class IRI="#Tachyarrhythmias"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Supraventricular_premature_beats"/>
+        <Class IRI="#Supraventricular_arrhythmias"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Supraventricular_premature_beats"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#localisation_of_origin"/>
+            <Class IRI="#Atrial_origin"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tachycardia-bradycardia_syndrome"/>
+        <Class IRI="#Bradyarrhythmias"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tachycardia-bradycardia_syndrome"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#localisation_of_origin"/>
+            <Class IRI="#Atrial_origin"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Torsade_de_pointes_tachycardia"/>
+        <Class IRI="#Ventricular_arrhythmias"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ventricular_arrhythmias"/>
+        <Class IRI="#Tachyarrhythmias"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ventricular_fibrillation"/>
+        <Class IRI="#Ventricular_arrhythmias"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ventricular_tachycardia"/>
+        <Class IRI="#Ventricular_arrhythmias"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ventricular_tachycardia"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#has_QRS_complex_type"/>
+            <Class IRI="#Wide"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ventricular_tachycardia"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#has_rhythm"/>
+            <NamedIndividual IRI="#regular_rhytm"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wide"/>
+        <Class IRI="#QRS_complex_type"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AV_node_origin"/>
+        <Class IRI="#Atrial_origin"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Atrial_fibrillation"/>
+        <Class IRI="#Atrial_flutter"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Bradyarrhythmias"/>
+        <Class IRI="#Tachyarrhythmias"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cardiac_arrhythmias"/>
+        <Class IRI="#Diagnosis"/>
+        <Class IRI="#Origin"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Focal_atrial_tachycardia"/>
+        <Class IRI="#Multifocal_atrial_tachycardia"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Narrow"/>
+        <Class IRI="#Wide"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#P-wave"/>
+        <Class IRI="#QRS_complex_type"/>
+        <Class IRI="#Rate"/>
+        <Class IRI="#Rhythm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Ventricular_fibrillation"/>
+        <Class IRI="#Ventricular_tachycardia"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Diagnosis"/>
+        <NamedIndividual IRI="#Blood_tests"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Diagnosis"/>
+        <NamedIndividual IRI="#Cheest_X-ray"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Atrioventricular_block"/>
+        <NamedIndividual IRI="#First-degree_block"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Diagnosis"/>
+        <NamedIndividual IRI="#Holter_monitor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Diagnosis"/>
+        <NamedIndividual IRI="#Megical_history"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Diagnosis"/>
+        <NamedIndividual IRI="#Physical_exams"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Atrioventricular_block"/>
+        <NamedIndividual IRI="#Second-degree_block"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Atrioventricular_block"/>
+        <NamedIndividual IRI="#Third-degree_block"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#P-wave"/>
+        <NamedIndividual IRI="#absent_P_wave"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#P-wave"/>
+        <NamedIndividual IRI="#discernable_P_wave"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#P-wave"/>
+        <NamedIndividual IRI="#indiscernible_P_wave"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#P-wave"/>
+        <NamedIndividual IRI="#inverted_P_wave"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rhythm"/>
+        <NamedIndividual IRI="#irregular_rhythm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rhythm"/>
+        <NamedIndividual IRI="#irregulary_irregular_rhythm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#P-wave"/>
+        <NamedIndividual IRI="#normal_P_wave"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rhythm"/>
+        <NamedIndividual IRI="#regular_rhytm"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_P_wave_morphology"/>
+        <ObjectProperty IRI="#ecg_findings_propeties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_QRS_complex_type"/>
+        <ObjectProperty IRI="#ecg_findings_propeties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_rate"/>
+        <ObjectProperty IRI="#ecg_findings_propeties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_rhythm"/>
+        <ObjectProperty IRI="#ecg_findings_propeties"/>
+    </SubObjectPropertyOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#has_P_wave_morphology"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#has_QRS_complex_type"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#has_rate"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#has_rhythm"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#localisation_of_origin"/>
+    </FunctionalObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#has_rate"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#has_rhythm"/>
+    </AsymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_P_wave_morphology"/>
+        <Class IRI="#Cardiac_arrhythmias"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_QRS_complex_type"/>
+        <Class IRI="#Cardiac_arrhythmias"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_rate"/>
+        <Class IRI="#Cardiac_arrhythmias"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_rhythm"/>
+        <Class IRI="#Cardiac_arrhythmias"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_P_wave_morphology"/>
+        <Class IRI="#P-wave"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_QRS_complex_type"/>
+        <Class IRI="#QRS_complex_type"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_rate"/>
+        <Class IRI="#Rate"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_rhythm"/>
+        <Class IRI="#Rhythm"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#localisation_of_origin"/>
+        <Class IRI="#Origin"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AV_nodal_reentry_tachycardia</IRI>
+        <Literal>The most common cause of paroxysmal supraventricular tachycardia. Caused by two alternative electrical conduction pathways, one fast and one slow, within the AV node. The fast accessory pathway occasionally leads to a non-extinguishable circulating electrical impulse, or reentrant circuit, within the AV node that activates the atria and ventricles simultaneously and at a rapid rate. Causes episodic symptoms of palpitations, dyspnea, chest pain, dizziness and/or syncope.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Atrial_fibrillation</IRI>
+        <Literal>A common supraventricular tachyarrhythmia, caused by uncoordinated atrial activation resulting in an irregular ventricular response. Patients are often asymptomatic but have an irregular pulse on physical examination. When present, symptoms usually include palpitations and lightheadedness. Patients with AF are at an increased risk of stroke and other thromboembolic complications.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Atrial_flutter</IRI>
+        <Literal>A supraventricular tachyarrhythmia usually caused by a single macroreentrant rhythm within the atria that is classically characterized on ECG by the sawtooth appearance of P waves, also known as &quot;flutter waves&quot;, with narrow QRS complexes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Atrial_tachycardia</IRI>
+        <Literal>Rare abnormality - about 5% of cases.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Atrioventricular_block</IRI>
+        <Literal>Arrhythmia characterized by an interrupted or delayed conduction between the atria and the ventricles. AV blocks are divided into three different degrees depending on the extent of the delay or interruption.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Atrioventricular_reentry_tachycardia</IRI>
+        <Literal>A paroxysmal supraventricular tachycardia that occurs as a result of a reentrant rhythm through an accessory pathway. The reentrant loop may involve orthodromic conduction through the AV node and antidromic conduction through the aberrant pathway (orthodromic AVRT) or orthodromic conduction through the aberrant pathway and antidromic conduction through the AV node pathway (antidromic AVRT).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Bradyarrhythmias</IRI>
+        <Literal>Heart rhytm pathology is characterized by a resting heart rate &lt; 60/minutes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cardiac_arrhythmias</IRI>
+        <Literal>This class gathers all of types of arrhythmias&apos; abnormalities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Multifocal_atrial_tachycardia</IRI>
+        <Literal>A tachyarrhythmia (HR &gt; 100) in which the atria respond to impulses from multiple atrial pacemakers outside of the SA node. Characterized by at least three different P wave morphologies. Precipitated by underlying lung disease or heart failure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#P-wave</IRI>
+        <Literal>P-waves&apos; descriptions in AMBOSS reference for different arrhuthmia can be generally covered by these 5 values so in order to simplify our ontology we make an enumerated class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Premature_ventricular_beats</IRI>
+        <Literal>Extra, abnormal heartbeats caused by ectopic foci within the ventricles. Very common finding that may be idiopathic or secondary to cardiovascular disease (e.g., CAD or myocarditis), electrolyte imbalances (e.g., hypokalemia or hypomagnesemia), or certain drugs (e.g., digoxin) and substances (e.g., caffeine or alcohol). ECG findings include broad QRS complexes and compensatory pauses; may be random or have consistent patterns, such as couplets or bigeminy. Most individuals are asymptomatic, but select patients may present with symptoms such as dizziness or palpations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#QRS_complex_type</IRI>
+        <Literal>QRS complex types represented in AMBOSS reference take different values which could be separated into two disjoint big groups - wide and narrow QRS complexes. We don&apos;t do enumerated class in order to be able to specify the nature of QRS complex (loke we can see in AMBOSS source).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Rate</IRI>
+        <Literal>Mesuared in bpm - heart beats per minute, so can&apos;t be neagtive.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Rhythm</IRI>
+        <Literal>Rhythm types represented in AMBOSS reference take these three values so we can make an enumerated class with three instances without specifizing them into the disjoint classes. We cover all of the cases.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Supraventricular_arrhythmias</IRI>
+        <Literal>Cardiac arrhythmias that originate in the sinoatrial node, atrial myocardium, or atrioventricular node (regular QRS complex).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Supraventricular_premature_beats</IRI>
+        <Literal>Atrial contractions triggered by ectopic foci rather than the sinoatrial node. They arise within the atria (atrial premature beats) or, through retrograde conduction, in the atrioventricular node (junctional premature beats).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Tachyarrhythmias</IRI>
+        <Literal>Heart rhytm pathology is characterized by a resting heart rate &gt; 100/minutes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Tachycardia-bradycardia_syndrome</IRI>
+        <Literal>A subset of sick sinus syndrome in which there are alternating periods of bradyarrhythmia with tachyarrhythmia.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Torsade_de_pointes_tachycardia</IRI>
+        <Literal>An increased heart rate. Defined as &gt; 100 beats/min for adults and adolescents, &gt; 140 beats/min for children 2-12 years of age, and &gt; 160 beats/min for children &lt; 2 years of age.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Ventricular_arrhythmias</IRI>
+        <Literal>Cardiac arrhythmias that originate below the atrioventricular node (wide QRS complex).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Ventricular_fibrillation</IRI>
+        <Literal>A life-threatening cardiac arrhythmia characterized by disorganized, high-frequency (usually &gt; 300 bpm) ventricular contractions that result in diminished cardiac output and hemodynamic collapse. Characterized by a very irregular rhythm with indiscernible P waves or QRS complexes on ECG.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Ventricular_tachycardia</IRI>
+        <Literal>A potentially life-threatening arrhythmia originating in the ventricles that can cause palpitations, syncope, cardiogenic shock, and sudden cardiac death. Characterized by broad QRS complexes (&gt;120 ms) and tachycardia (&gt; 120 bpm) on ECG.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
